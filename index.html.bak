@@ -57,7 +57,7 @@ body{
 	width:100%;height:100%;
 }
 .yyly_list_div{
-	width:100%;background: rgba(31, 58, 94, 1);padding: 1px;
+	width:99%;background: rgba(31, 58, 94, 1);padding: 1px;
 }
 .yyly_list_div .item_div{
 	width:40%;
@@ -78,8 +78,104 @@ body{
 .yyly_list_div .item_div .desc_div{
 	line-height: 18px;letter-spacing: 0.5px;font-size: 12px;color: rgba(121, 175, 240, 1);
 }
+
+.rywdwglxt_div{
+	width:95%;margin:0 auto;padding:1px;
+}
+.rywdwglxt_div .title_div {
+    text-align: center;
+}
+.rywdwglxt_div .title_div .title_div {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 20px;
+}
+.rywdwglxt_div .title_div .desc_div {
+    font-size: 15px;
+    margin-top: 10px;
+}
+.dwxt_list_div {
+    width: 325px;
+    margin: 20px auto 0;
+}
+.dwxt_list_div .item_div {
+    width: 325px;
+    height: 420px;
+}
+.dwxt_list_div .uwbxt_div{
+	background: #006bdd url(./templets/seekcy/images/ryw1.png) no-repeat top center;
+}
+.dwxt_list_div .lyxt_div {
+    margin-top: 10px;
+    background: #006bdd url(./templets/seekcy/images/ryw2.png) no-repeat top center;
+}
+.dwxt_list_div .swdt_div {
+    margin-top: 10px;
+    background: #006bdd url(./templets/seekcy/images/ryw3.png) no-repeat center 30px;
+}
+.dwxt_list_div .item_div .title_div {
+    height: 20px;
+    line-height: 20px;
+    margin-top: 262px;
+    margin-left: 24px;
+    padding: 0 15px;
+    font-size: 18px;
+    font-weight: normal;
+    color: #006bdd;
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 10px;
+}
+.dwxt_list_div .item_div .desc_div {
+    width: 280px;
+    line-height: 24px;
+    margin-top: 10px;
+    margin-left: 24px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.syhglry_img_div{
+	width:100%;
+	margin-top:20px;
+	background: url(./img/homePage/oilBgL.png);
+	background-size: 100%;
+	padding:1px;
+}
+.rectangleL_img_div{
+	width:145px;
+	margin-top:35px;
+	margin-left:63px;
+	background: url(./img/homePage/rectangleL.png);
+	background-size: 100%;
+}
+.syhglry_div{
+	line-height:15px;font-size:9px;text-align:center;
+}
+.ywhy_div{
+	line-height:15px;font-size:7px;text-align:center;
+}
+.fblqxl_div{
+	
+}
 </style>
-<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	resizeDiv();
+});
+
+function resizeDiv(){
+	var bw=$("body").css("width");
+	bw=bw.substring(0,bw.length-2);
+	$("#syhglry_img_div").css("height",(bw*776/1903)+"px");
+
+	var ridw=$("#rectangleL_img_div").css("width");
+	ridw=ridw.substring(0,ridw.length-2);
+	$("#rectangleL_img_div").css("height",(ridw*152/709)+"px");
+}
+</script>
 </head>
 <body>
 <div class="nav_div">
@@ -130,6 +226,32 @@ body{
 		<div class="desc_div">地铁、隧道、工地、港口等人员位置定位、巡检管理</div>
 	</div>
 </div>
-<div class="rywdwglxt_div" style="width:95%;background-color:#0f0;"></div>
+<div class="rywdwglxt_div">
+	<div class="title_div">
+		<div class="title_div">人与物定位管理系统</div>
+		<div class="desc_div">为诸多行业提供室内外无缝定位解决方案</div>
+	</div>
+	<div class="dwxt_list_div">
+		<div class="item_div uwbxt_div">
+			<div class="title_div">UWB系统</div>
+			<div class="desc_div">UWB高精度定位系统10厘米级定位精度多种定位核心算法多种系统对接服务适用于：电力、矿业智慧工厂等场景</div>
+		</div>
+		<div class="item_div lyxt_div">
+			<div class="title_div">蓝牙系统</div>
+			<div class="desc_div">蓝牙高精度定位系统微功耗技术设计全电池型设备8年超长待机设计适用于：石油化工、工程建设、医疗等</div>
+		</div>
+		<div class="item_div swdt_div">
+			<div class="title_div">三维地图</div>
+			<div class="desc_div">三维地图建模服务支持3D实景建模支持倾斜摄影建模支付GIS地图服务支持多种模式切换</div>
+		</div>
+	</div>
+</div>
+<div class="syhglry_img_div" id="syhglry_img_div">
+	<div class="rectangleL_img_div" id="rectangleL_img_div">
+		<div class="syhglry_div">石油化工类人员位置精确管理系统</div>
+		<div class="ywhy_div">已为行业1000+企业提供完整解决方案</div>
+	</div>
+	<div class="fblqxl_div">防爆类全系列硬件产品助力石油化工安全生产管理</div>
+</div>
 </body>
 </html>
