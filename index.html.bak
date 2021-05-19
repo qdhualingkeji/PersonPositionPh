@@ -82,16 +82,19 @@ body{
 .rywdwglxt_div{
 	width:95%;margin:0 auto;padding:1px;
 }
-.rywdwglxt_div .title_div {
+.rywdwglxt_div .logo_div {
     text-align: center;
 }
-.rywdwglxt_div .title_div .title_div {
+.rywdwglxt_div .logo_div .logo_img{
+	width:100px;margin-top:20px;
+}
+.rywdwglxt_div .logo_div .title_div {
     font-size: 20px;
     font-weight: bold;
     color: #000000;
     margin-top: 20px;
 }
-.rywdwglxt_div .title_div .desc_div {
+.rywdwglxt_div .logo_div .desc_div {
     font-size: 15px;
     margin-top: 10px;
 }
@@ -212,7 +215,7 @@ body{
 	color:#fff;font-size:13px;text-align:center;margin-top:10px;
 }
 .fw_list_div{
-	width:95%;margin:20px auto 0;background-color:#0f0;
+	width:95%;margin:20px auto 0;
 }
 .fw_list_div .item_div{
 	width:45%;height:155px;text-align:center;background-color:#fff;border:#666 dashed 1px;
@@ -237,6 +240,108 @@ body{
 }
 .fw_list_div .item_div .desc_div .row_div{
 	line-height:15px;
+}
+
+.hzhb_div{
+	width:100%;height:350px;margin-top:20px;background-color:#F2F2F2;
+}
+.hzhb_div .logo_div{
+	text-align:center;
+}
+.hzhb_div .logo_div .title_div{
+	font-weight: bold;
+}
+.hzhb_div .logo_div .desc_div{
+	margin-top: 5px;
+}
+.hzhb_div .list_div{
+	width:330px;height:155px;margin:10px auto 0;
+}
+.hzhb_div .list_div .dthljfd_img {
+    width: 150px;
+	height:29px;
+	position: absolute;
+}
+.hzhb_div .list_div .jnky_img{
+	width: 150px;
+	height:30px;
+	margin-left:175px;
+	position: absolute;
+}
+.hzhb_div .list_div .dyhkjc_img{
+	width: 150px;
+	height:25px;
+	margin-top:37px;
+	position: absolute;
+}
+.hzhb_div .list_div .hnycxny_img{
+	width: 150px;
+	height:21px;
+	margin-top:39px;
+	margin-left:175px;
+	position: absolute;
+}
+.hzhb_div .list_div .lfyl_img{
+	width: 150px;
+	height:41px;
+	margin-top:72px;
+	position: absolute;
+}
+.hzhb_div .list_div .lwzy_img{
+	width: 150px;
+	height:42px;
+	margin-top:72px;
+	margin-left:175px;
+	position: absolute;
+}
+.hzhb_div .list_div .mzgj_img{
+	width: 150px;
+	height:28px;
+	margin-top:123px;
+	position: absolute;
+}
+.hzhb_div .list_div .ytyy_img{
+	width: 150px;
+	height:27px;
+	margin-top:123px;
+	margin-left:175px;
+	position: absolute;
+}
+.foot_div{
+    width: 100%;
+    height: 193px;
+    padding-top: 1px;
+    background-color: #1F232A;
+}
+.foot_div .gsmc_div{
+	height: 30px;
+	line-height: 30px;
+	color: #fff;
+	font-size: 14px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.foot_div .zxrx_div,.foot_div .yxdz_div{
+	height: 30px;
+	line-height: 30px;
+	color: #fff;
+	font-size: 14px;
+	margin-left: 10px;
+}
+.foot_div .gsdz_div{
+	line-height: 20px;
+	color: #fff;
+	font-size: 14px;
+	margin-left: 10px;
+}
+.foot_div .qdcqsw_div {
+    width: 95%;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    margin: 0 auto;
 }
 </style>
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
@@ -314,7 +419,8 @@ function resizeDiv(){
 	</div>
 </div>
 <div class="rywdwglxt_div">
-	<div class="title_div">
+	<div class="logo_div">
+		<img class="logo_img" src="templets/seekcy/images/1.png"/>
 		<div class="title_div">人与物定位管理系统</div>
 		<div class="desc_div">为诸多行业提供室内外无缝定位解决方案</div>
 	</div>
@@ -392,6 +498,30 @@ function resizeDiv(){
 			<div class="row_div">生产安全信息化管理平台/联网管控平台</div>
 		</div>
 	</div>
+</div>
+<div class="hzhb_div">
+	<div class="logo_div">
+		<img class="logo_img" src="templets/seekcy/images/1.png"/>
+		<div class="title_div">合作伙伴</div>
+		<div class="desc_div">与诸多顶尖企业共同铸就卓越口碑</div>
+	</div>
+	<div class="list_div">
+		<img class="dthljfd_img" src="img/index/202104270003.png">
+		<img class="jnky_img" src="img/index/202104270004.png">
+		<img class="dyhkjc_img" src="img/index/202104270006.png">
+		<img class="hnycxny_img" src="img/index/202104270007.png">
+		<img class="lfyl_img" src="img/index/202104270002.png">
+		<img class="lwzy_img" src="img/index/202104270005.png">
+		<img class="mzgj_img" src="img/index/202104270010.png">
+		<img class="ytyy_img" src="img/index/202104270009.png">
+	</div>
+</div>
+<div class="foot_div">
+	<div class="gsmc_div">公司名称：青岛华凌科技有限公司</div>
+	<div class="zxrx_div">咨询热线：0532-55588351&nbsp;&nbsp;15712773653（微信同号）</div>
+	<div class="yxdz_div">邮箱地址：qdhualing@126.com</div>
+	<div class="gsdz_div">公司地址：青岛市北中央商务区敦化路136号西王大厦1606</div>
+	<div class="qdcqsw_div">青岛辰麒数维软件有限公司  <a href="https://beian.miit.gov.cn" target="_blank" style="color:#fff;text-decoration:none;">鲁ICP备19062226号-4</a></div>
 </div>
 </body>
 </html>
