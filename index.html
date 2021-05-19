@@ -137,7 +137,7 @@ body{
 }
 
 .syhglry_img_div{
-	width:100%;
+	width:99%;
 	margin-top:20px;
 	background: url(./img/homePage/oilBgL.png);
 	background-size: 100%;
@@ -159,6 +159,85 @@ body{
 .fblqxl_div{
 	margin-top:20px;margin-left:63px;color:#fff;font-size:7px;
 }
+.showBg_img_div{
+	width:95%;
+	margin:20px auto 0;
+	background: url(./img/homePage/showBgL.png);
+	background-size: 100%;
+	padding:1px;
+}
+.showBg_img_div ul li{
+	font-size:7px;
+	list-style: none;
+}
+.showBg_img_div ul li .circle_span{
+	width: 8px;
+	height: 8px;
+	background: rgba(255, 153, 0, 1);
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 5px;
+}
+.sgs_ul{
+	margin-top:63px;
+	margin-left:-7px;
+}
+.sgs_ul .ssdw_li,.sgs_ul .gjhf_li,.sgs_ul .ssbj_li{
+	width:50px;
+}
+.zwj_ul{
+	margin-top:-104px;margin-left:167px;
+}
+.zwj_ul .znxjgl_li,.zwj_ul .wfjr_li,.zwj_ul .jcaisb_li{
+	width:83px;
+}
+.szzz_ul{
+	margin-left:255px;
+}
+.szzz_ul .sjdt_li,.szzz_ul .zcjswwyt_li,.szzz_ul .zcptxtc_li,.szzz_ul .zcdsjxs_li{
+	width:83px;
+	margin-left:-40px;
+}
+.gddxz_img_div{
+	width:99%;
+	margin-top:20px;
+	background: url(./img/homePage/fuwuL.png);
+	background-size: 100%;
+	padding:1px;
+}
+.gddxz_div{
+	color:#fff;font-size:16px;text-align:center;margin-top:18px;
+}
+.hlkjfwsc_div{
+	color:#fff;font-size:13px;text-align:center;margin-top:10px;
+}
+.fw_list_div{
+	width:95%;margin:20px auto 0;
+}
+.fw_list_div .item_div{
+	width:45%;height:155px;text-align:center;background-color:#fff;border:#666 dashed 1px;
+}
+.fw_list_div .rjfw_div{
+	margin-top:-157px;margin-left:55%;
+}
+.fw_list_div .item_div .yjcp_img{
+	width:60px;height:61px;margin-top:10px;
+}
+.fw_list_div .item_div .rjcp_img{
+	width: 60px;height:49px;margin-top:15px;
+}
+.fw_list_div .item_div .title_div{
+	color:#2E2E2E;font-size:15px;
+}
+.fw_list_div .item_div .rjfw_tit_div{
+	margin-top:8px;
+}
+.fw_list_div .item_div .desc_div{
+	margin-top:5px;font-size:9px;color:#666;
+}
+.fw_list_div .item_div .desc_div .row_div{
+	line-height:15px;
+}
 </style>
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript">
@@ -174,6 +253,14 @@ function resizeDiv(){
 	var ridw=$("#rectangleL_img_div").css("width");
 	ridw=ridw.substring(0,ridw.length-2);
 	$("#rectangleL_img_div").css("height",(ridw*152/709)+"px");
+
+	var sidw=$("#showBg_img_div").css("width");
+	sidw=sidw.substring(0,sidw.length-2);
+	$("#showBg_img_div").css("height",(sidw*593/964)+"px");
+
+	var gidw=$("#gddxz_img_div").css("width");
+	gidw=gidw.substring(0,gidw.length-2);
+	$("#gddxz_img_div").css("height",(gidw*480/1903)+"px");
 }
 </script>
 </head>
@@ -252,6 +339,59 @@ function resizeDiv(){
 		<div class="ywhy_div">已为行业1000+企业提供完整解决方案</div>
 	</div>
 	<div class="fblqxl_div">防爆类全系列硬件产品助力石油化工安全生产管理</div>
+</div>
+<div class="showBg_img_div" id="showBg_img_div">
+	<ul class="sgs_ul">
+		<li class="ssdw_li">
+			<span class="circle_span"></span>实时定位
+		</li>
+		<li class="gjhf_li">
+			<span class="circle_span"></span>轨迹回放
+		</li>
+		<li class="ssbj_li">
+			<span class="circle_span"></span>实时报警
+		</li>
+	</ul>
+	<ul class="zwj_ul">
+		<li class="znxjgl_li">
+			<span class="circle_span"></span>智能巡检管理
+		</li>
+		<li class="wfjr_li">
+			<span class="circle_span"></span>无缝接入DCS\MES\ERP\PMS\HR\CMS等数据，实现平台数据互联互通，联动管控
+		</li>
+		<li class="jcaisb_li">
+			<span class="circle_span"></span>集成AI识别\视频\门 禁联动
+		</li>
+	</ul>
+	<ul class="szzz_ul">
+		<li class="sjdt_li"><span class="circle_span"></span>2D\3D实景地图制作</li>
+		<li class="zcjswwyt_li"><span class="circle_span"></span>支持江苏'五位一体'平台系统</li>
+		<li class="zcptxtc_li"><span class="circle_span"></span>支持20+平台系统厂家系统无缝兼容</li>
+		<li class="zcdsjxs_li"><span class="circle_span"></span>支持大数据展示</li>
+	</ul>
+</div>
+<div class="gddxz_img_div" id="gddxz_img_div">
+	<div class="gddxz_div">更多的选择给你更大的可能性</div>
+	<div class="hlkjfwsc_div">华凌科技服务市场，以更多的选择满足你的业务全面需求</div>
+</div>
+<div class="fw_list_div">
+	<div class="item_div">
+		<img class="yjcp_img" src="img/homePage/hardware-serverL.png"/>
+		<div class="title_div">硬件产品服务</div>
+		<div class="desc_div">
+			<div class="row_div">工程建设类/特殊定制类</div>
+			<div class="row_div">司法专用系列/矿类专用型</div>
+			<div class="row_div">石油化工防爆型全系列/医疗导航类</div>
+		</div>
+	</div>
+	<div class="item_div rjfw_div">
+		<img class="rjcp_img" src="img/homePage/software-serverL.png"/>
+		<div class="title_div rjfw_tit_div">软件服务</div>
+		<div class="desc_div">
+			<div class="row_div">行业专用软件/导航软件</div>
+			<div class="row_div">生产安全信息化管理平台/联网管控平台</div>
+		</div>
+	</div>
 </div>
 </body>
 </html>
