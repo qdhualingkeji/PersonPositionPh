@@ -85,7 +85,7 @@ body{
 .rywdwglxt_div .logo_div {
     text-align: center;
 }
-.rywdwglxt_div .logo_div .logo_img{
+.rywdwglxt_div .logo_div .logo_img,.hzhb_div .logo_div .logo_img{
 	width:100px;margin-top:20px;
 }
 .rywdwglxt_div .logo_div .title_div {
