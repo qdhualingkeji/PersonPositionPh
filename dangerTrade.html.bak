@@ -82,7 +82,7 @@ body{
 	text-align:center;
 }
 
-.sswzgl_div,.znldkz_div{
+.sswzgl_div,.znldkz_div,.ffdglnl_div{
 	width:100%;background-color: #F6F6F6;
 }
 .ssgjgl_div,.znhxjgl_div{
@@ -94,7 +94,8 @@ body{
 .sswzgl_div .container_div,
 .ssgjgl_div .container_div,
 .znldkz_div .container_div,
-.znhxjgl_div .container_div{
+.znhxjgl_div .container_div,
+.ffdglnl_div .container_div{
 	width: 330px;margin: 10px auto 0;
 }
 /*
@@ -103,7 +104,8 @@ body{
 .sswzgl_div .title_div,
 .ssgjgl_div .title_div,
 .znldkz_div .title_div,
-.znhxjgl_div .title_div{
+.znhxjgl_div .title_div,
+.ffdglnl_div .title_div{
 	height:50px;line-height:50px;color:#2E2E2E;font-weight: bold;
 }
 /*
@@ -112,7 +114,8 @@ logo图片div
 .sswzgl_div .sswzgl_img,
 .ssgjgl_div .ssgjgl_img,
 .znldkz_div .znldkz_img,
-.znhxjgl_div .znhxjgl_img{
+.znhxjgl_div .znhxjgl_img,
+.ffdglnl_div .ffdglnl_img{
 	width: 330px;height:277px;
 }
 /*
@@ -126,6 +129,9 @@ logo图片div
 .znhxjgl_div .dwxm_list_div{
 	width:250px;margin:-100px auto 0;
 }
+.ffdglnl_div .dwxm_list_div{
+	width:250px;margin:-110px auto 0;
+}
 /*
 定位项目div里的每一项
 */
@@ -136,6 +142,9 @@ logo图片div
 .znldkz_div .dwxm_list_div .item_div,
 .znhxjgl_div .dwxm_list_div .item_div{
 	width:250px;height:43px;
+}
+.ffdglnl_div .dwxm_list_div .item_div{
+	width:250px;height:33px;
 }
 .sswzgl_div .dwxm_list_div .cldw_div,
 .ssgjgl_div .gkxm_list_div .fkgk_div{
@@ -151,7 +160,7 @@ logo图片div
 }
 .znldkz_div .dwxm_list_div .item_div img,
 .znhxjgl_div .dwxm_list_div .item_div img{
-	width:44px;height:37px;margin-top:2px;
+	width:35px;height:29px;margin-top:2px;
 }
 .sswzgl_div .dwxm_list_div .item_div .text_div,
 .ssgjgl_div .gkxm_list_div .item_div .text_div{
@@ -159,7 +168,10 @@ logo图片div
 }
 .znldkz_div .dwxm_list_div .item_div .text_div,
 .znhxjgl_div .dwxm_list_div .item_div .text_div{
-	line-height:40px;margin-top:-43px;margin-left:55px;color:#fff;
+	line-height:30px;margin-top:-33px;margin-left:55px;color:#fff;font-size:13px;
+}
+.ffdglnl_div .dwxm_list_div .item_div .text_div{
+	line-height:30px;margin-top:-30px;margin-left:48px;color:#fff;font-size:13px;
 }
 /*
 实时记录列表div
@@ -167,7 +179,8 @@ logo图片div
 .sswzgl_div .ssjl_list_div,
 .ssgjgl_div .gnsm_list_div,
 .znldkz_div .gnsm_list_div,
-.znhxjgl_div .gnsm_list_div{
+.znhxjgl_div .gnsm_list_div,
+.ffdglnl_div .gnsm_list_div{
 	width:330px;margin:40px auto 0;
 }
 /*
@@ -176,7 +189,8 @@ logo图片div
 .sswzgl_div .ssjl_list_div .item_div,
 .ssgjgl_div .gnsm_list_div .item_div,
 .znldkz_div .gnsm_list_div .item_div,
-.znhxjgl_div .gnsm_list_div .item_div{
+.znhxjgl_div .gnsm_list_div .item_div,
+.ffdglnl_div .gnsm_list_div .item_div{
 	padding-top:1px;
 }
 .sswzgl_div .ssjl_list_div .ssdw_item_div,
@@ -187,7 +201,10 @@ logo图片div
 .sswzgl_div .ssjl_list_div .lsgj_item_div,
 .ssgjgl_div .gnsm_list_div .dzwl_item_div,
 .ssgjgl_div .gnsm_list_div .yjhj_item_div,
-.znhxjgl_div .gnsm_list_div .xjxt_item_div{
+.znhxjgl_div .gnsm_list_div .xjxt_item_div,
+.znhxjgl_div .gnsm_list_div .sjfx_item_div,
+.ffdglnl_div .gnsm_list_div .kshdt_item_div,
+.ffdglnl_div .gnsm_list_div .dsjfx_item_div{
 	height:115px;
 }
 .sswzgl_div .ssjl_list_div .zzdw_item_div,
@@ -209,16 +226,22 @@ logo图片div
 .znhxjgl_div .gnsm_list_div .item_div .logo_img_div{
 	width:60px;text-align:center;
 }
+.ffdglnl_div .gnsm_list_div .item_div .logo_img_div{
+	width:72px;text-align:center;
+}
 .sswzgl_div .ssjl_list_div .item_div .ssdw_logo_img_div,
 .ssgjgl_div .gnsm_list_div .item_div .ssbj_logo_img_div,
-.znldkz_div .gnsm_list_div .item_div .mjld_logo_img_div{
+.znldkz_div .gnsm_list_div .item_div .mjld_logo_img_div,
+.ffdglnl_div .gnsm_list_div .item_div .znhwh_logo_img_div{
 	height:123px;
 }
 .sswzgl_div .ssjl_list_div .item_div .lsgj_logo_img_div,
 .ssgjgl_div .gnsm_list_div .item_div .dzwl_logo_img_div,
 .znldkz_div .gnsm_list_div .item_div .spld_logo_img_div,
 .znhxjgl_div .gnsm_list_div .item_div .xjxt_logo_img_div,
-.znhxjgl_div .gnsm_list_div .item_div .sjfx_logo_img_div{
+.znhxjgl_div .gnsm_list_div .item_div .sjfx_logo_img_div,
+.ffdglnl_div .gnsm_list_div .item_div .kshdt_logo_img_div,
+.ffdglnl_div .gnsm_list_div .item_div .dsjfx_logo_img_div{
 	height:105px;
 }
 .sswzgl_div .ssjl_list_div .item_div .zzdw_logo_img_div,
@@ -237,19 +260,22 @@ logo图片div
 .sswzgl_div .ssjl_list_div .item_div .logo_img_div .logo_img,
 .ssgjgl_div .gnsm_list_div .item_div .logo_img_div .logo_img,
 .znldkz_div .gnsm_list_div .item_div .logo_img_div .logo_img,
-.znhxjgl_div .gnsm_list_div .item_div .logo_img_div .logo_img{
+.znhxjgl_div .gnsm_list_div .item_div .logo_img_div .logo_img,
+.ffdglnl_div .gnsm_list_div .item_div .logo_img_div .logo_img{
 	width:57px;height:67px;
 }
 .sswzgl_div .ssjl_list_div .item_div .logo_img_div .ssdw_logo_img,.sswzgl_div .ssjl_list_div .item_div .lsgj_logo_img,
 .ssgjgl_div .gnsm_list_div .item_div .logo_img_div .ssbj_logo_img,.ssgjgl_div .gnsm_list_div .item_div .dzwl_logo_img,
 .znldkz_div .gnsm_list_div .item_div .logo_img_div .mjld_logo_img,.znldkz_div .gnsm_list_div .item_div .logo_img_div .spld_logo_img,
-.znhxjgl_div .gnsm_list_div .item_div .logo_img_div .xjxt_logo_img,.znhxjgl_div .gnsm_list_div .item_div .logo_img_div .sjfx_logo_img{
+.znhxjgl_div .gnsm_list_div .item_div .logo_img_div .xjxt_logo_img,.znhxjgl_div .gnsm_list_div .item_div .logo_img_div .sjfx_logo_img,
+.ffdglnl_div .gnsm_list_div .item_div .logo_img_div .kshdt_logo_img,.ffdglnl_div .gnsm_list_div .item_div .logo_img_div .dsjfx_logo_img,.ffdglnl_div .gnsm_list_div .item_div .logo_img_div .znhwh_logo_img{
 	margin-top:10px;
 }
 .sswzgl_div .ssjl_list_div .item_div .logo_img_div .text_div,
 .ssgjgl_div .gnsm_list_div .item_div .logo_img_div .text_div,
 .znldkz_div .gnsm_list_div .item_div .logo_img_div .text_div,
-.znhxjgl_div .gnsm_list_div .item_div .logo_img_div .text_div{
+.znhxjgl_div .gnsm_list_div .item_div .logo_img_div .text_div,
+.ffdglnl_div .gnsm_list_div .item_div .logo_img_div .text_div{
 	font-size:14px;
 }
 /*
@@ -258,19 +284,23 @@ logo图片div
 .sswzgl_div .ssjl_list_div .item_div .desc_div,
 .ssgjgl_div .gnsm_list_div .item_div .desc_div,
 .znldkz_div .gnsm_list_div .item_div .desc_div,
-.znhxjgl_div .gnsm_list_div .item_div .desc_div{
+.znhxjgl_div .gnsm_list_div .item_div .desc_div,
+.ffdglnl_div .gnsm_list_div .item_div .desc_div{
 	margin-left:80px;color:#595959;font-size:13px;text-indent: 2em;
 }
 .sswzgl_div .ssjl_list_div .item_div .ssdw_desc_div,
 .ssgjgl_div .gnsm_list_div .item_div .ssbj_desc_div,
-.znldkz_div .gnsm_list_div .item_div .mjld_desc_div{
+.znldkz_div .gnsm_list_div .item_div .mjld_desc_div,
+.ffdglnl_div .gnsm_list_div .item_div .znhwh_desc_div{
 	margin-top:-123px;
 }
 .sswzgl_div .ssjl_list_div .item_div .lsgj_desc_div,
 .ssgjgl_div .gnsm_list_div .item_div .dzwl_desc_div,
 .znldkz_div .gnsm_list_div .item_div .spld_desc_div,
 .znhxjgl_div .gnsm_list_div .item_div .xjxt_desc_div,
-.znhxjgl_div .gnsm_list_div .item_div .sjfx_desc_div{
+.znhxjgl_div .gnsm_list_div .item_div .sjfx_desc_div,
+.ffdglnl_div .gnsm_list_div .item_div .kshdt_desc_div,
+.ffdglnl_div .gnsm_list_div .item_div .dsjfx_desc_div{
 	margin-top:-105px;
 }
 .sswzgl_div .ssjl_list_div .item_div .zzdw_desc_div,
@@ -553,6 +583,55 @@ logo图片div
 				</div>
 				<div class="desc_div sjfx_desc_div">
 				可对巡检内容进行智能数据分析，可生产巡检合格率，可生成隐 患排查报表，可对隐患情况进行逐级上报，可对隐患处置情况进行闭 环监督管理，提升企业安全生产隐患排查工作精细化闭环管理和有效 监督，助力企业安全生产。
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="ffdglnl_div">
+	<div class="container_div">
+		<div class="title_div">丰富的管理能力</div>
+		<img class="ffdglnl_img" src="img/dangerTrade/iconbg-fiveL.png">
+		<div class="dwxm_list_div">
+			<div class="item_div">
+				<img src="img/dangerTrade/live-actionL.png" alt="">
+				<div class="text_div">支持实景2D/3D电子地图绘制</div>
+			</div>
+			<div class="item_div">
+				<img src="img/dangerTrade/interfaceShow.png" alt="">
+				<div class="text_div">支持大数据分析及界面展示</div>
+			</div>
+			<div class="item_div">
+				<img src="img/dangerTrade/intelligentizedL.png" alt="">
+				<div class="text_div">全智能化自诊维护系统</div>
+			</div>
+		</div>
+		<div class="gnsm_list_div">
+			<div class="item_div kshdt_item_div">
+				<div class="logo_img_div kshdt_logo_img_div">
+					<img class="logo_img kshdt_logo_img" src="./img/dangerTrade/visualizationL.png" alt="">
+					<div class="text_div">可视化地图</div>
+				</div>
+				<div class="desc_div kshdt_desc_div">
+				支持2D/3D电子地图绘制，支持厂区实景电子地图三维建模，支持室内区域 及楼层2D/3D建模，支持多种地图显示模式，可根据企业要求进行地图绘制，精 细化建模，系统便捷化管理，提升企业对外展示形像。
+				</div>
+			</div>
+			<div class="item_div dsjfx_item_div">
+				<div class="logo_img_div dsjfx_logo_img_div">
+					<img class="logo_img dsjfx_logo_img" src="./img/dangerTrade/big-dataL.png" alt="">
+					<div class="text_div">大数据分析</div>
+				</div>
+				<div class="desc_div dsjfx_desc_div">
+				可对实时定位数据、门禁联动数据、视频跟踪数据、巡检管理数据、DCS/ MES等联动数据进行大数据分析、展示，为企业提供全面可视化的管理界面， 提升企业智能化安全管理水平和厂区整体把控能力，为企业安全生产助力提效。
+				</div>
+			</div>
+			<div class="item_div znhwh_item_div">
+				<div class="logo_img_div znhwh_logo_img_div">
+					<img class="logo_img znhwh_logo_img" src="./img/dangerTrade/intelligentializeL.png" alt="">
+					<div class="text_div">智能化维护</div>
+				</div>
+				<div class="desc_div znhwh_desc_div">
+				提供全面的智能化硬件系统和智能化软件系统，硬件系统全部硬件自带自诊 断功能，异常情况智能上报，软件系统智能数据分析，对设备异常、低电量提醒、 通讯异常、系统使用异常提供智能诊断，为系统平稳使用系统、高效使用系统提 供全方位保障。
 				</div>
 			</div>
 		</div>
