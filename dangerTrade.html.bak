@@ -85,81 +85,141 @@ body{
 .sswzgl_div{
 	width:100%;background-color: #F6F6F6;
 }
-.sswzgl_div .container_div{
+.ssgjgl_div{
+	width:100%;background-color: #fff;
+}
+/*
+容器div
+*/
+.sswzgl_div .container_div,
+.ssgjgl_div .container_div{
 	width: 330px;margin: 10px auto 0;
 }
-.sswzgl_div .title_div{
+/*
+标题div
+*/
+.sswzgl_div .title_div,
+.ssgjgl_div .title_div{
 	height:50px;line-height:50px;color:#2E2E2E;font-weight: bold;
 }
-.sswzgl_div .sswzgl_img{
+/*
+logo图片div
+*/
+.sswzgl_div .sswzgl_img,
+.ssgjgl_div .ssgjgl_img{
 	width: 330px;height:277px;
 }
-.sswzgl_div .dwxm_list_div{
+/*
+定位项目div
+*/
+.sswzgl_div .dwxm_list_div,.ssgjgl_div .gkxm_list_div{
 	width:300px;margin:-100px auto 0;
 }
-.sswzgl_div .dwxm_list_div .item_div{
+/*
+定位项目div里的每一项
+*/
+.sswzgl_div .dwxm_list_div .item_div,
+.ssgjgl_div .gkxm_list_div .item_div{
 	width:100px;height:70px;text-align:center;
 }
-.sswzgl_div .dwxm_list_div .cldw_div{
+.sswzgl_div .dwxm_list_div .cldw_div,
+.ssgjgl_div .gkxm_list_div .fkgk_div{
 	margin-top:-70px;margin-left:100px;
 }
-.sswzgl_div .dwxm_list_div .wzdw_div{
+.sswzgl_div .dwxm_list_div .wzdw_div,
+.ssgjgl_div .gkxm_list_div .cbsgk_div{
 	margin-top:-70px;margin-left:200px;
 }
-.sswzgl_div .dwxm_list_div .item_div img{
+.sswzgl_div .dwxm_list_div .item_div img,
+.ssgjgl_div .gkxm_list_div .item_div img{
 	width:53px;height:35px;
 }
-.sswzgl_div .dwxm_list_div .item_div .text_div{
+.sswzgl_div .dwxm_list_div .item_div .text_div,
+.ssgjgl_div .gkxm_list_div .item_div .text_div{
 	margin-top:10px;color:#fff;font-size:14px;
 }
-
-.ssjl_list_div{
+/*
+实时记录列表div
+*/
+.sswzgl_div .ssjl_list_div,
+.ssgjgl_div .gnsm_list_div{
 	width:330px;margin:40px auto 0;
 }
-.ssjl_list_div .item_div{
+/*
+实时记录列表div里的每一项
+*/
+.sswzgl_div .ssjl_list_div .item_div,
+.ssgjgl_div .gnsm_list_div .item_div{
 	padding-top:1px;
 }
-.ssjl_list_div .ssdw_item_div{
+.sswzgl_div .ssjl_list_div .ssdw_item_div,
+.ssgjgl_div .gnsm_list_div .ssbj_item_div{
 	height:133px;
 }
-.ssjl_list_div .lsgj_item_div{
+.sswzgl_div .ssjl_list_div .lsgj_item_div,
+.ssgjgl_div .gnsm_list_div .dzwl_item_div,
+.ssgjgl_div .gnsm_list_div .yjhj_item_div{
 	height:115px;
 }
-.ssjl_list_div .zzdw_item_div{
+.sswzgl_div .ssjl_list_div .zzdw_item_div{
 	height:98px;
 }
-.ssjl_list_div .item_div .logo_img_div{
-	width:60px;height:95px;text-align:center;
+/*
+实时记录列表div-每一项-logo div
+*/
+.sswzgl_div .ssjl_list_div .item_div .logo_img_div,
+.ssgjgl_div .gnsm_list_div .item_div .logo_img_div{
+	width:60px;text-align:center;
 }
-.ssjl_list_div .item_div .logo_img_div .logo_img{
-	width:57px;height:67px;
-}
-.ssjl_list_div .item_div .ssdw_logo_img_div{
+.sswzgl_div .ssjl_list_div .item_div .ssdw_logo_img_div,
+.ssgjgl_div .gnsm_list_div .item_div .ssbj_logo_img_div{
 	height:123px;
 }
-.ssjl_list_div .item_div .lsgj_logo_img_div{
+.sswzgl_div .ssjl_list_div .item_div .lsgj_logo_img_div,
+.ssgjgl_div .gnsm_list_div .item_div .dzwl_logo_img_div{
 	height:105px;
 }
-.ssjl_list_div .item_div .zzdw_logo_img_div{
+.sswzgl_div .ssjl_list_div .item_div .zzdw_logo_img_div{
 	height:88px;
 }
-.ssjl_list_div .item_div .ssdw_logo_img,.ssjl_list_div .item_div .lsgj_logo_img{
+.sswzgl_div .ssjl_list_div .item_div .yjhj_logo_img_div{
+	height:95px;
+}
+/*
+实时记录列表div-每一项-logo
+*/
+.sswzgl_div .ssjl_list_div .item_div .logo_img_div .logo_img,
+.ssgjgl_div .gnsm_list_div .item_div .logo_img_div .logo_img{
+	width:57px;height:67px;
+}
+.sswzgl_div .ssjl_list_div .item_div .logo_img_div .ssdw_logo_img,.sswzgl_div .ssjl_list_div .item_div .lsgj_logo_img,
+.ssgjgl_div .gnsm_list_div .item_div .logo_img_div .ssbj_logo_img,.ssgjgl_div .gnsm_list_div .item_div .dzwl_logo_img{
 	margin-top:10px;
 }
-.ssjl_list_div .item_div .logo_img_div .text_div{
+.sswzgl_div .ssjl_list_div .item_div .logo_img_div .text_div,
+.ssgjgl_div .gnsm_list_div .item_div .logo_img_div .text_div{
 	font-size:14px;
 }
-.ssjl_list_div .item_div .desc_div{
+/*
+实时记录列表div-每一项-描述
+*/
+.sswzgl_div .ssjl_list_div .item_div .desc_div,
+.ssgjgl_div .gnsm_list_div .item_div .desc_div{
 	margin-left:80px;color:#595959;font-size:13px;text-indent: 2em;
 }
-.ssjl_list_div .item_div .ssdw_desc_div{
+.sswzgl_div .ssjl_list_div .item_div .ssdw_desc_div,
+.ssgjgl_div .gnsm_list_div .item_div .ssbj_desc_div{
 	margin-top:-123px;
 }
-.ssjl_list_div .item_div .lsgj_desc_div{
+.sswzgl_div .ssjl_list_div .item_div .lsgj_desc_div,
+.ssgjgl_div .gnsm_list_div .item_div .dzwl_desc_div{
 	margin-top:-105px;
 }
-.zzdw_desc_div{
-	
+.sswzgl_div .ssjl_list_div .item_div .zzdw_desc_div{
+	margin-top:-88px;
+}
+.ssgjgl_div .gnsm_list_div .item_div .yjhj_desc_div{
+	margin-top:-95px;
 }
 </style>
 </head>
@@ -293,6 +353,49 @@ body{
 					<div class="text_div">最终位置</div>
 				</div>
 				<div class="desc_div zzdw_desc_div">实时记录人员分布最终位置，记录事件前一秒所有人员分布状态，在危险情况下，可即时撑握处置前一秒人员的位置分布，对救援及紧急处置提供数据参考依据，为紧急救援提供参考位置信息。</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="ssgjgl_div">
+	<div class="container_div">
+		<div class="title_div">实时告警管理</div>
+		<img class="ssgjgl_img" src="img/dangerTrade/iconbg-twoL.png">
+		<div class="gkxm_list_div">
+			<div class="item_div">
+				<img src="img/dangerTrade/control.png" alt="">
+				<div class="text_div">员工管控</div>
+			</div>
+			<div class="item_div fkgk_div">
+				<img src="img/dangerTrade/Visitor-managementL.png" alt="">
+				<div class="text_div">访客管控</div>
+			</div>
+			<div class="item_div cbsgk_div">
+				<img src="img/dangerTrade/Contractor-managementL.png" alt="">
+				<div class="text_div">承包商管控</div>
+			</div>
+		</div>
+		<div class="gnsm_list_div">
+			<div class="item_div ssbj_item_div">
+				<div class="logo_img_div ssbj_logo_img_div">
+					<img class="logo_img ssbj_logo_img" src="./img/dangerTrade/policeL.png" alt="">
+					<div class="text_div">实时报警</div>
+				</div>
+				<div class="desc_div ssbj_desc_div">系统支持多种实时报警方式，全方位保障厂区人员生产安全，可对厂区区域超员、区域缺员、人员超时滞留、人员静止不动、人员无权限越界、禁区、外来人员路线偏离、访客禁区等进行有效实时后台报警管理，可对厂区人员动态进行精细化管理，提升厂区生产安全和管理智能化。</div>
+			</div>
+			<div class="item_div dzwl_item_div">
+				<div class="logo_img_div dzwl_logo_img_div">
+					<img class="logo_img dzwl_logo_img" src="./img/dangerTrade/fencingL.png" alt="">
+					<div class="text_div">电子围栏</div>
+				</div>
+				<div class="desc_div dzwl_desc_div">可对地图进行电子围栏绘制，可对临时区域管理快速绘制电子围栏，可对围栏进行权限管控，对无权限进入围栏事件进行实时报警、对围栏内人员异常、超时、静止等情况进行实时上报，可对外来人员禁区进行管理和临时限制管控。</div>
+			</div>
+			<div class="item_div yjhj_item_div">
+				<div class="logo_img_div yjhj_logo_img_div">
+					<img class="logo_img yjhj_logo_img" src="./img/dangerTrade/distressL.png" alt="">
+					<div class="text_div">一键呼救</div>
+				</div>
+				<div class="desc_div yjhj_desc_div">在紧急情况下，人员可通过标签卡上一键呼救按键进行报警，后台可通过声音或声光等多种报警方式进行即时提醒处置，可快速响应紧急情况，可对人员位置进行快速定位和智能联动。</div>
 			</div>
 		</div>
 	</div>
