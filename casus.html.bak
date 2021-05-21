@@ -93,6 +93,43 @@ body{
     font-size: 12px;
     line-height: 20px;
 }
+
+.foot_div{
+    width: 100%;
+    height: 193px;
+    padding-top: 1px;
+    background-color: #1F232A;
+}
+.foot_div .gsmc_div{
+	height: 30px;
+	line-height: 30px;
+	color: #fff;
+	font-size: 14px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.foot_div .zxrx_div,.foot_div .yxdz_div{
+	height: 30px;
+	line-height: 30px;
+	color: #fff;
+	font-size: 14px;
+	margin-left: 10px;
+}
+.foot_div .gsdz_div{
+	line-height: 20px;
+	color: #fff;
+	font-size: 14px;
+	margin-left: 10px;
+}
+.foot_div .qdcqsw_div {
+    width: 95%;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    margin: 0 auto;
+}
 </style>
 </head>
 <body>

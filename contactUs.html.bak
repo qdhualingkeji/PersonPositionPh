@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>联系我们</title>
+<style>
+body{
+	margin:0;
+}
+.nav_div{
+	width: 100%;
+	height: 60px;
+	border-bottom: 1px solid #fff;
+	top: 0;
+	background-color: #333;
+	position: fixed;
+	overflow: auto;
+}
+.nav_div .cw_span {
+    color: #fff;
+    font-size: 12px;
+    margin-top: 23px;
+    margin-left: 12px;
+    position: absolute;
+}
+.nav_div .item_div{
+	width: 33%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+}
+.nav_div .whhy_div{
+	margin-top:-60px;margin-left:33%;
+}
+.nav_div .cpzs_div{
+	margin-top:-60px;margin-left:66%;
+}
+.nav_div .xmal_div{
+	margin-top:-60px;margin-left:99%;
+}
+.nav_div .lxwm_div{
+	margin-top:-60px;margin-left:132%;
+}
+.nav_div .sy_a,.nav_div .whhy_a,.nav_div .cpzs_a,.nav_div .xmal_a,.nav_div .lxwm_a{
+	color:#fff;text-decoration: none;
+}
+.space1_div {
+    width: 100%;
+    height: 60px;
+}
+.logoImg_div .logo_img{
+	width:100%;
+}
+</style>
+</head>
+<body>
+<div class="nav_div">
+	<span class="cw_span" onclick="closeWindow();">&lt;</span>
+	<div class="item_div sy_div">
+		<a class="sy_a" href="index.html">首页</a>
+	</div>
+	<div class="item_div whhy_div">
+		<a class="whhy_a" href="dangerTrade.html">危化行业</a>
+	</div>
+	<div class="item_div cpzs_div">
+		<a class="cpzs_a" href="productShow.html">产品展示</a>
+	</div>
+	<div class="item_div xmal_div">
+		<a class="xmal_a" href="casus.html">项目案例</a>
+	</div>
+	<div class="item_div lxwm_div">
+		<a class="lxwm_a" href="contactUs.html">联系我们</a>
+	</div>
+</div>
+<div class="space1_div"></div>
+<div class="logoImg_div" id="logoImg_div">
+	<img class="logo_img" src="./img/casus/caseBgL.png">
+</div>
+
+</body>
+</html>
