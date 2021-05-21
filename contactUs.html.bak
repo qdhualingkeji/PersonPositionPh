@@ -56,6 +56,37 @@ body{
 .logoImg_div .logo_img{
 	width:100%;
 }
+.gsjj_div{
+	width: 330px;
+	margin:0 auto;
+}
+.gsjj_div .rych_list_div {
+    width: 100%;
+    height: 82px;
+}
+.gsjj_div .rych_list_div .item_div {
+    width: 110px;
+    height: 90px;
+    text-align: center;
+}
+.gsjj_div .rych_list_div .gxqcyqy_div {
+    margin-top: -90px;
+    margin-left: 110px;
+}
+.gsjj_div .rych_list_div .sdsrjqy_div {
+    margin-top: -90px;
+    margin-left: 220px;
+}
+.gsjj_div .rych_list_div .item_div .iso_img {
+    width: 52px;
+    height: 46px;
+}
+.gsjj_div .rych_list_div .item_div .text_div {
+    width: 80px;
+    margin: 4px auto 0;
+    font-size: 12px;
+    color: rgba(51, 143, 233, 1);
+}
 </style>
 </head>
 <body>
@@ -79,8 +110,23 @@ body{
 </div>
 <div class="space1_div"></div>
 <div class="logoImg_div" id="logoImg_div">
-	<img class="logo_img" src="./img/casus/caseBgL.png">
+	<img class="logo_img" src="./img/contactUs/202105060001.jpg">
 </div>
-
+<div class="gsjj_div">
+	<div class="rych_list_div">
+		<div class="item_div">
+			<img class="iso_img" src="./img/contactUs/icon-one.png">
+			<div class="text_div">ISO9001质量管理体系认证</div>
+		</div>
+		<div class="item_div gxqcyqy_div">
+			<img class="gxqcyqy_img" src="./img/contactUs/icon-three.png">
+			<div class="text_div">高新区创新企业</div>
+		</div>
+		<div class="item_div sdsrjqy_div">
+			<img class="sdsrjqy_img" src="./img/contactUs/icon-four.png">
+			<div class="text_div">山东省软件企业</div>
+		</div>
+	</div>
+</div>
 </body>
 </html>
