@@ -7,6 +7,124 @@
 <meta name="Keywords" content="">
 <meta name="Description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	initMap();//创建和初始化地图
+});
+
+//创建和初始化地图函数：
+function initMap(){
+	createMap();//创建地图
+	setMapEvent();//设置地图事件
+	addMapControl();//向地图添加控件
+	addMarker();//向地图中添加marker
+}
+ 
+//创建地图函数：
+function createMap(){
+	var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+	var point = new BMap.Point(120.385500,36.097710);//定义一个中心点坐标
+	map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+	window.map = map;//将map变量存储在全局
+}
+
+//地图事件设置函数：
+function setMapEvent(){
+	map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+	map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+	map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+	map.enableKeyboard();//启用键盘上下左右键移动地图
+}
+
+//地图控件添加函数：
+function addMapControl(){
+	//向地图中添加缩放控件
+	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+	map.addControl(ctrl_nav);
+	//向地图中添加缩略图控件
+	var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+	map.addControl(ctrl_ove);
+	//向地图中添加比例尺控件
+	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+	map.addControl(ctrl_sca);
+}
+    
+//标注点数组
+var markerArr = [{title:"敦化路136号-西王大厦",content:"地址：青岛市北中央商务区敦化路136号西王大厦1606",point:"120.385500|36.097710",isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+	 ];
+//创建marker
+function addMarker(){
+	for(var i=0;i<markerArr.length;i++){
+		var json = markerArr[i];
+		var p0 = json.point.split("|")[0];
+		var p1 = json.point.split("|")[1];
+		var point = new BMap.Point(p0,p1);
+		var iconImg = createIcon(json.icon);
+		var marker = new BMap.Marker(point,{icon:iconImg});
+		var iw = createInfoWindow(i);
+		var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+		marker.setLabel(label);
+		map.addOverlay(marker);
+		label.setStyle({
+					borderColor:"#808080",
+					color:"#333",
+					cursor:"pointer"
+		});
+		
+		(function(){
+			var index = i;
+			var _iw = createInfoWindow(i);
+			var _marker = marker;
+			_marker.addEventListener("click",function(){
+				this.openInfoWindow(_iw);
+			});
+			_iw.addEventListener("open",function(){
+				_marker.getLabel().hide();
+			})
+			_iw.addEventListener("close",function(){
+				_marker.getLabel().show();
+			})
+			label.addEventListener("click",function(){
+				_marker.openInfoWindow(_iw);
+			})
+			if(!!json.isOpen){
+				label.hide();
+				_marker.openInfoWindow(_iw);
+			}
+		})()
+	}
+}
+
+//创建InfoWindow
+function createInfoWindow(i){
+	var json = markerArr[i];
+	var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+	return iw;
+}
+
+//创建一个Icon
+function createIcon(json){
+	var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+	return icon;
+}
+
+function closeWindow(){
+	window.opener=null;
+	window.open('','_self');
+	window.close();
+}
+</script>
+<script>
+var _hmt = _hmt || [];
+(function () {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?504f88edc1f4208794aab23f90adfc67";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
 <title>联系我们</title>
 <style>
 body{
@@ -87,6 +205,85 @@ body{
     font-size: 12px;
     color: rgba(51, 143, 233, 1);
 }
+.hlkjjj_div {
+    width: 330px;
+    height: 258px;
+    margin: 20px auto;
+    background-color: #fff;
+}
+.hlkjjj_div .title_div {
+    width: 100%;
+    margin: 20px auto 0;
+    font-size: 20px;
+    font-family: SimHei;
+    font-weight: bold;
+    color: rgba(51, 58, 78, 1);
+}
+.hlkjjj_div .content_div {
+    width: 100%;
+    margin: 15px auto 0;
+    font-size: 14px;
+    color: rgba(51, 58, 78, 1);
+    line-height: 24px;
+    letter-spacing: 0px;
+}
+
+.dituContent_div{
+	width:330px;height:330px;margin:50px auto 0;border:#ccc solid 1px;
+}
+.iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+.iw_poi_content {width:200px;font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+
+.lxfs_div {
+    width: 330px;
+    margin: 10px auto 30px;
+}
+.lxfs_div .title_div {
+    line-height: 30px;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+.lxfs_div .row_div {
+    line-height: 30px;
+}
+
+.foot_div{
+    width: 100%;
+    height: 193px;
+    padding-top: 1px;
+    background-color: #1F232A;
+}
+.foot_div .gsmc_div{
+	height: 30px;
+	line-height: 30px;
+	color: #fff;
+	font-size: 14px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.foot_div .zxrx_div,.foot_div .yxdz_div{
+	height: 30px;
+	line-height: 30px;
+	color: #fff;
+	font-size: 14px;
+	margin-left: 10px;
+}
+.foot_div .gsdz_div{
+	line-height: 20px;
+	color: #fff;
+	font-size: 14px;
+	margin-left: 10px;
+}
+.foot_div .qdcqsw_div {
+    width: 95%;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    margin: 0 auto;
+}
 </style>
 </head>
 <body>
@@ -127,6 +324,30 @@ body{
 			<div class="text_div">山东省软件企业</div>
 		</div>
 	</div>
+	<div class="hlkjjj_div">
+		<div class="title_div">青岛华凌科技有限公司</div>
+		<div class="content_div">
+			<p>青岛华凌科技有限公司致力于运用工业物联网、蓝牙定位等新技术，打造新一代智能化生产制造、智能仓储WMS系统。提供基于新一代定位技术的化工智能管理整体解决方案。</p>
+			<p>产品系列</p>
+			<p>工业物联网软件包括MES远程监控平台、厂区人员定位系统、二维码追溯系统以及基于RFID和手机应用的新一代WMS系统等多个应用软件平台，为实现企业智能制造和智慧仓储提供全面方位信息化技术服务。</p>
+		</div>
+	</div>
+</div>
+<!--百度地图容器-->
+<div class="dituContent_div" id="dituContent"></div>
+<div class="lxfs_div">
+	<div class="title_div">联系方式：</div>
+	<div class="row_div">电话：0532-55588351&nbsp;&nbsp;15712773653</div>
+	<div class="row_div">传真：0532-55588352</div>
+	<div class="row_div">邮箱：qdhualing@126.com</div>
+	<div class="row_div">地址：山东省青岛市北中央商务区敦化路136号西王大厦16F</div>
+</div>
+<div class="foot_div">
+	<div class="gsmc_div">公司名称：青岛华凌科技有限公司</div>
+	<div class="zxrx_div">咨询热线：0532-55588351&nbsp;&nbsp;15712773653（微信同号）</div>
+	<div class="yxdz_div">邮箱地址：qdhualing@126.com</div>
+	<div class="gsdz_div">公司地址：青岛市北中央商务区敦化路136号西王大厦1606</div>
+	<div class="qdcqsw_div">青岛辰麒数维软件有限公司  <a href="https://beian.miit.gov.cn" target="_blank" style="color:#fff;text-decoration:none;">鲁ICP备19062226号-4</a></div>
 </div>
 </body>
 </html>
