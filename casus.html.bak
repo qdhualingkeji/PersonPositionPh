@@ -9,6 +9,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <script>
+function closeWindow(){
+	window.opener=null;
+	window.open('','_self');
+	window.close();
+}
+
 var _hmt = _hmt || [];
 (function () {
   var hm = document.createElement("script");
@@ -24,37 +30,30 @@ body{
 }
 .nav_div{
 	width: 100%;
-	height: 60px;
+	height: 80px;
 	border-bottom: 1px solid #fff;
 	top: 0;
 	background-color: #333;
 	position: fixed;
-	overflow: auto;
 }
 .nav_div .cw_span {
     color: #fff;
     font-size: 12px;
-    margin-top: 23px;
+    margin-top: 20px;
     margin-left: 12px;
     position: absolute;
 }
 .nav_div .item_div{
 	width: 33%;
-	height: 60px;
-	line-height: 60px;
+	height: 30px;
+	line-height: 30px;
 	text-align: center;
 }
-.nav_div .whhy_div{
-	margin-top:-60px;margin-left:33%;
+.nav_div .whhy_div,.nav_div .lxwm_div{
+	margin-top:-30px;margin-left:33%;
 }
 .nav_div .cpzs_div{
-	margin-top:-60px;margin-left:66%;
-}
-.nav_div .xmal_div{
-	margin-top:-60px;margin-left:99%;
-}
-.nav_div .lxwm_div{
-	margin-top:-60px;margin-left:132%;
+	margin-top:-30px;margin-left:66%;
 }
 .nav_div .sy_a,.nav_div .whhy_a,.nav_div .cpzs_a,.nav_div .xmal_a,.nav_div .lxwm_a{
 	color:#fff;text-decoration: none;
